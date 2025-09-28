@@ -14,7 +14,6 @@ ALLOWED_CATEGORIES = [
     "Overreliance",
     "Trust Issues",
     "Policy/School Rules",
-    "Mixed Views",
     "Ethical/Privacy Concerns",
     "No Use",
     "Other",
@@ -34,13 +33,13 @@ Categories (use exact strings):
 - Overreliance: Worries about becoming lazy or dependent
 - Trust Issues: Doesn’t trust responses; always double-checks
 - Policy/School Rules: Mentions bans, restrictions, teacher feedback
-- Mixed Views: Likes AI but has concerns
 - Ethical/Privacy Concerns: Worries about AI’s effect on society/privacy
 - No Use: “I don’t use AI” or “never used it”
 - Other: Doesn’t fit above or is off-topic
 
 Instructions:
 - Choose exactly one category that best fits overall.
+- If multiple categories seem present, pick the single category that is most apparent overall.
 - If none clearly fit, use "Other".
 - Output JSON only in this schema:
   {{
