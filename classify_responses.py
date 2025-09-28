@@ -115,19 +115,19 @@ def classify_text(client: Anthropic, model: str, text: str, max_retries: int = 5
             data = json.loads(json_region)
             category = normalize_category(data.get("category", "Other"))
             return category, full_output
-        except (json.JSONDecodeError, KeyError):
+        except (json.JSONDecodeError, KeyError) as e:
             if attempt == max_retries - 1:
-                return "Other", full_output if 'full_output' in locals() else ""
+                return "Other", f"Parse error: {str(e)} | raw=\n{full_output if 'full_output' in locals() else ''}"
         except APIStatusError as e:
             if getattr(e, "status_code", None) in (429, 500, 502, 503, 504) and attempt < max_retries - 1:
                 time.sleep(delay)
                 delay = min(delay * 2, 16)
                 continue
             if attempt == max_retries - 1:
-                return "Other", full_output if 'full_output' in locals() else ""
-        except Exception:
+                return "Other", f"API error ({getattr(e, 'status_code', 'unknown')}): {e}"
+        except Exception as e:
             if attempt == max_retries - 1:
-                return "Other", full_output if 'full_output' in locals() else ""
+                return "Other", f"Unexpected error: {e}"
             time.sleep(delay)
             delay = min(delay * 2, 16)
     return "Other", ""
@@ -160,15 +160,21 @@ def main():
     parser.add_argument(
         "--model",
         dest="model",
-        default="claude-3-5-sonnet-20240620",
+        default="claude-3-5-sonnet-latest",
         help="Anthropic model name",
+    )
+    parser.add_argument(
+        "--api-key",
+        dest="api_key",
+        default=None,
+        help="Anthropic API key (optional; otherwise read from ANTHROPIC_API_KEY)",
     )
     args = parser.parse_args()
 
     if not args.output_path.lower().endswith(".json"):
         raise ValueError("Output file must be .json")
 
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    api_key = args.api_key or os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         raise RuntimeError("Set ANTHROPIC_API_KEY in your environment.")
 
