@@ -78,6 +78,19 @@ def normalize_category(cat: str) -> str:
     return "Other"
 
 
+def _combine_text_blocks(content_blocks: Any) -> str:
+    texts: List[str] = []
+    for b in content_blocks or []:
+        # SDK object style
+        if hasattr(b, "text") and getattr(b, "text"):
+            texts.append(getattr(b, "text"))
+            continue
+        # Dict style
+        if isinstance(b, dict) and b.get("type") == "text" and b.get("text"):
+            texts.append(str(b.get("text")))
+    return "".join(texts).strip()
+
+
 def classify_text(client: Anthropic, model: str, text: str, max_retries: int = 5) -> Tuple[str, str]:
     user_prompt = USER_PROMPT_TEMPLATE.format(text=text)
     delay = 1.0
@@ -88,10 +101,11 @@ def classify_text(client: Anthropic, model: str, text: str, max_retries: int = 5
                 max_tokens=200,
                 temperature=0,
                 system=SYSTEM_MSG,
+                # Be compatible with both SDK string content and dict blocks
                 messages=[{"role": "user", "content": user_prompt}],
             )
-            content_blocks = resp.content or []
-            full_output = "".join([getattr(b, "text", "") for b in content_blocks if getattr(b, "text", "")]).strip()
+            content_blocks = getattr(resp, "content", []) or []
+            full_output = _combine_text_blocks(content_blocks)
             # Parse category from JSON region within the output (be lenient)
             json_region = full_output
             start = full_output.find("{")
