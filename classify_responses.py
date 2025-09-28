@@ -52,33 +52,20 @@ Response:
 \"\"\"{text}\"\"\""""
 
 
-def load_records(input_path: str, input_column: str) -> List[Dict[str, Any]]:
+def read_csv_answers(input_path: str) -> List[str]:
     ext = os.path.splitext(input_path)[1].lower()
-    if ext == ".csv":
-        with open(input_path, "r", encoding="utf-8") as f:
-            reader = csv.DictReader(f)
-            rows = list(reader)
-            if not rows:
-                return []
-            if input_column not in rows[0]:
-                raise ValueError(
-                    f"Column '{input_column}' not found in CSV headers: {list(rows[0].keys())}"
-                )
-            return rows
-    elif ext == ".json":
-        with open(input_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-            if not isinstance(data, list):
-                raise ValueError("JSON must be a list of objects.")
-            if not data:
-                return []
-            if input_column not in data[0]:
-                raise ValueError(
-                    f"Key '{input_column}' not found in JSON objects: {list(data[0].keys())}"
-                )
-            return data
-    else:
-        raise ValueError("Input file must be .csv or .json")
+    if ext != ".csv":
+        raise ValueError("Input file must be .csv")
+    answers: List[str] = []
+    with open(input_path, "r", encoding="utf-8", newline="") as f:
+        reader = csv.reader(f)
+        for row in reader:
+            if not row:
+                continue
+            text = (row[0] if len(row) > 0 else "").strip()
+            if text:
+                answers.append(text)
+    return answers
 
 
 def normalize_category(cat: str) -> str:
@@ -104,46 +91,58 @@ def classify_text(client: Anthropic, model: str, text: str, max_retries: int = 5
                 messages=[{"role": "user", "content": user_prompt}],
             )
             content_blocks = resp.content or []
-            combined = "".join([getattr(b, "text", "") for b in content_blocks if getattr(b, "text", "")])
-            combined = combined.strip()
-            start = combined.find("{")
-            end = combined.rfind("}")
+            full_output = "".join([getattr(b, "text", "") for b in content_blocks if getattr(b, "text", "")]).strip()
+            # Parse category from JSON region within the output (be lenient)
+            json_region = full_output
+            start = full_output.find("{")
+            end = full_output.rfind("}")
             if start != -1 and end != -1 and end > start:
-                combined = combined[start : end + 1]
-            data = json.loads(combined)
+                json_region = full_output[start : end + 1]
+            data = json.loads(json_region)
             category = normalize_category(data.get("category", "Other"))
-            reason = (data.get("reason") or "").strip()
-            return category, reason
+            return category, full_output
         except (json.JSONDecodeError, KeyError):
             if attempt == max_retries - 1:
-                return "Other", "Could not parse model output"
+                return "Other", full_output if 'full_output' in locals() else ""
         except APIStatusError as e:
             if getattr(e, "status_code", None) in (429, 500, 502, 503, 504) and attempt < max_retries - 1:
                 time.sleep(delay)
                 delay = min(delay * 2, 16)
                 continue
             if attempt == max_retries - 1:
-                return "Other", f"API error: {e}"
-        except Exception as e:
+                return "Other", full_output if 'full_output' in locals() else ""
+        except Exception:
             if attempt == max_retries - 1:
-                return "Other", f"Unexpected error: {e}"
+                return "Other", full_output if 'full_output' in locals() else ""
             time.sleep(delay)
             delay = min(delay * 2, 16)
-    return "Other", "Unknown error"
+    return "Other", ""
+
+
+def build_summary(categories: List[str]) -> Dict[str, Any]:
+    total = len(categories)
+    counts: Dict[str, int] = {label: 0 for label in ALLOWED_CATEGORIES}
+    for c in categories:
+        counts[c] = counts.get(c, 0) + 1
+    percents: Dict[str, float] = {}
+    for label in ALLOWED_CATEGORIES:
+        if total == 0:
+            percents[label] = 0.0
+        else:
+            percents[label] = round(counts[label] * 100.0 / total, 2)
+    return {
+        "total_inputs": total,
+        "category_counts": counts,
+        "category_percents": percents,
+    }
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Classify AI-in-education free responses into categories with Claude 3.5 Sonnet."
+        description="Classify free-response CSV answers into one category each and output summary JSON."
     )
-    parser.add_argument("--in", dest="input_path", required=True, help="Absolute path to input .csv or .json")
-    parser.add_argument(
-        "--input-column",
-        dest="input_column",
-        default="Response",
-        help="Column/key containing the free text",
-    )
-    parser.add_argument("--out", dest="output_path", required=True, help="Absolute path to output .json or .csv")
+    parser.add_argument("--in", dest="input_path", required=True, help="Absolute path to input .csv (single column)")
+    parser.add_argument("--out", dest="output_path", required=True, help="Absolute path to output .json")
     parser.add_argument(
         "--model",
         dest="model",
@@ -152,38 +151,36 @@ def main():
     )
     args = parser.parse_args()
 
+    if not args.output_path.lower().endswith(".json"):
+        raise ValueError("Output file must be .json")
+
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         raise RuntimeError("Set ANTHROPIC_API_KEY in your environment.")
 
     client = Anthropic(api_key=api_key)
-    rows = load_records(args.input_path, args.input_column)
+    answers = read_csv_answers(args.input_path)
 
-    results: List[Dict[str, Any]] = []
-    for idx, row in enumerate(rows, start=1):
-        text = (row.get(args.input_column) or "").strip()
-        category, reason = classify_text(client, args.model, text)
-        out_row = dict(row)
-        out_row["category"] = category
-        out_row["reason"] = reason
-        results.append(out_row)
-        time.sleep(0.1)
+    records: List[Dict[str, Any]] = []
+    categories: List[str] = []
+    for text in answers:
+        category, full_output = classify_text(client, args.model, text)
+        records.append({
+            "input": text,
+            "output": full_output,
+            "category": category,
+        })
+        categories.append(category)
+        time.sleep(0.05)
 
-    out_ext = os.path.splitext(args.output_path)[1].lower()
-    if out_ext == ".json":
-        with open(args.output_path, "w", encoding="utf-8") as f:
-            json.dump(results, f, ensure_ascii=False, indent=2)
-    elif out_ext == ".csv":
-        if results:
-            fieldnames = list(results[0].keys())
-        else:
-            fieldnames = [args.input_column, "category", "reason"]
-        with open(args.output_path, "w", encoding="utf-8", newline="") as f:
-            writer = csv.DictWriter(f, fieldnames=fieldnames)
-            writer.writeheader()
-            writer.writerows(results)
-    else:
-        raise ValueError("Output file must be .json or .csv")
+    summary = build_summary(categories)
+    final_output = {
+        "summary": summary,
+        "data": records,
+    }
+
+    with open(args.output_path, "w", encoding="utf-8") as f:
+        json.dump(final_output, f, ensure_ascii=False, indent=2)
 
 
 if __name__ == "__main__":
