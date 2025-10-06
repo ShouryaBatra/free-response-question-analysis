@@ -1,0 +1,469 @@
+{
+  "summary": {
+    "total_inputs": 88,
+    "category_counts": {
+      "Cheating Concerns": 7,
+      "Positive Learning Use": 41,
+      "Negative Experiences": 1,
+      "Overreliance": 21,
+      "Trust Issues": 3,
+      "Policy/School Rules": 3,
+      "Ethical/Privacy Concerns": 6,
+      "No Use": 0,
+      "Other": 6
+    },
+    "category_percents": {
+      "Cheating Concerns": 7.95,
+      "Positive Learning Use": 46.59,
+      "Negative Experiences": 1.14,
+      "Overreliance": 23.86,
+      "Trust Issues": 3.41,
+      "Policy/School Rules": 3.41,
+      "Ethical/Privacy Concerns": 6.82,
+      "No Use": 0.0,
+      "Other": 6.82
+    }
+  },
+  "data": [
+    {
+      "input": "I think chatgpt is very useful in general, although it shouldn't be used for everything. Because it's becoming so dominant in our world, teachers should teach students how to use it for school, but in a way that doesn't take away the actual learning and doesn't do the work for them. When used correctly, it can provide really good ideas, help, and a lot more that you otherwise might have not gotten.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response primarily emphasizes the usefulness of ChatGPT as a learning tool when used appropriately, noting it can 'provide really good ideas, help' while acknowledging it should be used in ways that don't replace actual learning.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I think AI can be very helpful, but only if used properly",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response expresses a generally positive view of AI as 'very helpful' with a qualification about proper use, which aligns most closely with the 'Positive Learning Use' category as it acknowledges AI's potential benefits in an educational context.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I think AI can be used in moderate usage and it’s not harmful to the brain as long as it is used with control",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response indicates a generally positive view of AI as not harmful when used in moderation and with control, suggesting the person sees value in using AI as a learning tool when used appropriately.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I think AI can be used in a positive way but we have to find a way to limit it to students due to all the plagiarism.",
+      "output": "{\n  \"category\": \"Cheating Concerns\",\n  \"reason\": \"The response primarily focuses on plagiarism concerns, mentioning the need to 'limit it to students due to all the plagiarism,' which directly relates to academic dishonesty and misuse.\"\n}",
+      "category": "Cheating Concerns"
+    },
+    {
+      "input": "Helpful",
+      "output": "```json\n{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response 'Helpful' indicates a positive experience with AI in education, suggesting it was beneficial to the user's learning, which best aligns with the 'Positive Learning Use' category.\"\n}\n```",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I think AI chat bots are like a double edged sword: they can help you learn, but can also minimize your learning. When it comes to using chat bots for school, one must use it appropriately to actually learn, and using it to cheat is not optimal for their future. In my opinion, chat bots are a great invention because it allows students to learn, and cheat, and they have to decide themselves how they want to use it.",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response primarily focuses on concerns about AI potentially minimizing learning and requiring students to resist the temptation to use it inappropriately, which aligns with worries about becoming dependent on AI rather than developing skills independently.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "I think it is a useful tool that should not be something we fear. However, it is a bit problematic that people are relying solely on AI instead of using their brain, as it results in a lack of critical thinking. Also, people using AI and claiming as their own is also troublesome because it’s plagiarism. I think teachers should try to take advantage of AI and teach students how to use it in a way that helps them in their learning. Also, with things such as AI detectors it is hard to tell whether one actually used AI as they aren’t fully accurate. It’s difficult to block people from using AI, so instead they should try to use it in a way that is beneficial. Anyhow, I have hopes for the future use of AI and I can’t wait to see how it progresses!",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response primarily focuses on concerns about people 'relying solely on AI instead of using their brain' and resulting 'lack of critical thinking', which directly aligns with the Overreliance category. While it mentions other aspects like plagiarism and positive potential, the central concern is about dependency on AI at the expense of independent thinking.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "Using it as a study tool is a good idea, but generating essays and other assignment along that line isn’t the best thing to do. Not only that, but AI is harmful to the environment in so many ways.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response primarily acknowledges AI as a useful study tool, which aligns with the 'Positive Learning Use' category. While it does mention concerns about misuse for assignments and environmental impact, the main sentiment expressed first is the positive educational application.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "it shouldn’t be allowed in my opinion because it makes people less willing to think, which will hinder the future generations ability to think",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response expresses concern that AI makes people 'less willing to think' and will 'hinder the future generations ability to think', which directly aligns with worries about becoming lazy or dependent on AI.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "I believe that AI can be a powerful tool, when it is used correctly. I feel that it should not be used primarily for doing school work, rather aiding along the way.",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response expresses concern about proper AI use, specifically warning against using it to 'do school work' and instead advocating for it as an aid. This indicates worry about overreliance on AI rather than using it as a supplementary tool.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "I think AI is a great way to help study and learn material that you don’t quite understand or when you can’t get help from a real person. It’s also great for editing paragraphs or just helping with little things here and there. However, I think it is making students lazier and they now don’t feel as much pressure because they can have ai do the work for them and they can tweak it.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response primarily describes AI as 'a great way to help study and learn material' and mentions its benefits for editing and providing assistance. While there is a secondary concern about students becoming lazier, the dominant sentiment is about AI's positive role in learning support.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "They suture the right answer but it really depends on the specific details you give the chatbox, especially in gemini if you were to ask about a history question like the corrupt bargain you would have to specify what year and who you are talking about",
+      "output": "{\n  \"category\": \"Trust Issues\",\n  \"reason\": \"The response indicates skepticism about AI's reliability, noting that AI may not provide accurate answers without very specific prompting. The user mentions that 'it really depends on the specific details you give' and implies that without proper specification, the AI might not return trustworthy information.\"\n}",
+      "category": "Trust Issues"
+    },
+    {
+      "input": "AI can be beneficial but more government oversight and regulation is needed",
+      "output": "{\n  \"category\": \"Ethical/Privacy Concerns\",\n  \"reason\": \"The response expresses concerns about AI governance and regulation at a societal level, which aligns with the 'Ethical/Privacy Concerns' category that covers worries about AI's broader effects on society.\"\n}",
+      "category": "Ethical/Privacy Concerns"
+    },
+    {
+      "input": "The opinions I've seen online about AI are both (In my opinion) correct and incorrect. I do agree that AI has no place in fine arts and that it's disgusting that the algorithm is being fed people's art to make soulless slop. I also agree that the fact people are using this tool to create pornographic, gory, or explicit images of others is absolutely abhorrent behavior and the people who do this (especially with children) should be put on a regsistry. But I do support the idea of AI being in STEM, as it helped me out of the trenches in my honors class for Biology, and the fact that one AI was also used to identify breast cancer before it became fully developed, and the fact it has many applications in helping people with disabilities. Honestly—I'm tired of people who act like they're the shit because they \"don't use AI\" in STEM or Academia. And I'm also tired of people who think they're the shit because they use AI frequently. Both parties are equally horrible, but at least people who don't use AI still have an ounce of humanity in them. We're human. we make flaws, and I'm speaking as someone who first touched ChatGPT to grade my essay. AI's a clunky tool. There's a lot of hypocrites who stand for \"Anti-AI\" but then go to use filters to see what they look like in a BRATZ doll style, ask ChatGPT to write Love Island scripts using their enemies, and also use chatbots like Character.AI. You're anti-AI until it's a silly trend? Regarding the chatbots, I could do a whole section on them as someone who used them to develop characters and OCs. But overrall, all I have to say is that albeit AI's a great tool, the way most people are using it—academic dishonesty, using it to create images—it makes me worried for the future state of the world, especially with the fact it literally pollutes the earth. For me? AI's cool as long as it just stays in the lane where it was made. You belong in STEM. nowhere else. My main problem with AI is that it's just people are using it for the wrong reasons. It's not AI's fault that there are several deepfaked and fake images of women and children in disgusting positions, it's not AI's fault several relationships got broken up because one partner left the other for Gojo on character ai, but our own. We were given a tool with golden opportunities, and as society usually does, we fucked it over.",
+      "output": "{\n  \"category\": \"Ethical/Privacy Concerns\",\n  \"reason\": \"The response primarily focuses on broader ethical concerns about AI's impact on society, including issues like AI-generated art, pornography, and deepfakes. While the person mentions some positive uses in STEM and their own experience, the dominant theme is concern about how AI is being misused in society and its ethical implications.\"\n}",
+      "category": "Ethical/Privacy Concerns"
+    },
+    {
+      "input": "I think it can be a great resource for studying or personalizing one’s education but not good in terms of creating work for school. I personally have only used chat gpt only for asking questions about things I wasn’t sure with and I mostly check the info before using it.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response primarily describes using AI as a 'great resource for studying' and mentions personally using ChatGPT to ask questions about things they're unsure about, which indicates using AI as a learning tool rather than for completing assignments.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I think AI in education cave be beneficial as a study tool, but it can be misused when the user asks for the chat bot to generate the product itself. This takes away the point of real life skills as in the real world, you may not have access to AI all the time.",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response primarily expresses concern about users becoming dependent on AI to generate work for them, emphasizing that this prevents developing real-life skills that would be needed when AI isn't available.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "I think AI can be helpful in a lot of situations, but not all",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response acknowledges AI's helpfulness in various situations, suggesting a generally positive view of AI as a useful tool, though with some limitations. This aligns best with the 'Positive Learning Use' category as it recognizes AI's beneficial applications.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "i think it can be useful, but that we shouldn't use it all the time or trust it completely.",
+      "output": "{\n  \"category\": \"Trust Issues\",\n  \"reason\": \"The response directly expresses skepticism about fully trusting AI ('shouldn't... trust it completely'), which is the core sentiment of the Trust Issues category.\"\n}",
+      "category": "Trust Issues"
+    },
+    {
+      "input": "I think it’s very helpful. I know my friends never understand what their teachers teach because they aren’t good at explaining so they ask AI to help them explain and they understand the topic a lot better. Personally I think AI teaches better than actual teachers.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response clearly describes AI as helpful for learning, specifically mentioning that it helps explain topics better than teachers and improves understanding, which aligns with the 'Positive Learning Use' category.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "i think it's useful and that we shouldn't ignore even if does have its downsides. as ai becomes bigger and bigger it makes sense that we should take advantage of how it can used whilst still not using it for ervhthing",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response is generally positive about AI, stating it's 'useful' and that 'we should take advantage of how it can be used', while acknowledging limitations ('not using it for everything'). This balanced but ultimately supportive view best fits the Positive Learning Use category.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I think that AI use is bad in all ways, not only does it waste water, but it ruins real art and all that surrounds expression. Not to mention the impact it has on learning. I don’t blame students for using because I understand why they are. Kids are worked to the bone and if they can use AI to do it, it makes sense that they would. I don’t think we should be using AI at all",
+      "output": "{\n  \"category\": \"Ethical/Privacy Concerns\",\n  \"reason\": \"The response primarily expresses broad concerns about AI's negative impact on society, including environmental issues ('waste water'), artistic expression ('ruins real art'), and learning. While it mentions understanding why students might use AI, the dominant theme is ethical concern about AI's wider societal impacts.\"\n}",
+      "category": "Ethical/Privacy Concerns"
+    },
+    {
+      "input": "AI should never be able to replace human teachers. And, the environmental damage is so awful, using AI itself is becoming such a big problem for future generations. If one needs help with homework or studying, most schools offer free tutoring, and there are many online resources available to them.",
+      "output": "{\n  \"category\": \"Ethical/Privacy Concerns\",\n  \"reason\": \"The response focuses on broader societal concerns about AI, specifically mentioning environmental damage and impacts on future generations, which aligns with ethical concerns about AI's effects on society.\"\n}",
+      "category": "Ethical/Privacy Concerns"
+    },
+    {
+      "input": "I would like to see the world work with AI rather than against it. For example in classes like Lit using AI to improve things/proofread even if the work is mostly your own.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response expresses a positive view of AI as a tool for learning, specifically mentioning using it to improve work and proofread in literature classes, which aligns with the 'Positive Learning Use' category.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "AI is good when it is used as a search engine. AI provides direct, easy to understand, and clear answers to any question. As long as users aren’t directly copying AI and using as their own, AI is pretty nice.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response primarily describes AI as beneficial for learning, highlighting that it provides 'direct, easy to understand, and clear answers to any question' and is 'pretty nice' when used appropriately. While there's a brief mention of not copying AI content, the overall sentiment focuses on AI's positive utility as a learning tool.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "As the world is getting more technical and ai is being integrated into more everyday tasks, I believe it is important that everyone learns how to use AI and how it works.",
+      "output": "{\n  \"category\": \"Other\",\n  \"reason\": \"The response discusses the importance of learning about AI in a general sense, but doesn't specifically mention any of the defined categories like personal use experiences, concerns about cheating, or specific educational impacts. It's a broad statement about AI literacy.\"\n}",
+      "category": "Other"
+    },
+    {
+      "input": "Really helpful",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response 'Really helpful' indicates a positive experience with AI in education, suggesting the person found AI tools beneficial, which aligns with the 'Positive Learning Use' category.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "It is a great tool when used properly, and the possibilities of it are endless.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response expresses a positive view of AI as 'a great tool when used properly' and mentions 'endless possibilities', indicating an optimistic perspective on AI's utility in learning contexts.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I believe that AI should be treated as a developing tool, not a furnished encyclopedia or something to replace our own thoughts. I don’t see why we shouldn’t enhance our education with the help of ever developing AIs. However, I draw the line where if we incorporate AI, there needs to also be human lead teaching on how it should be used. The danger of AI within the scope of education is that students start using it to think and learn for them. Students should use AI as an extra tool under the conditions that they use it to enhance and amplify their knowledge and thought and that they are proactive in checking the AI’s work. Teachers (math teachers for instance) can use AI to complete repetitive tasks such as generating problems, as time on these tedious tasks could instead be replaced with developing their curriculum or doing other more creative things as they see fit.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response primarily advocates for AI as a beneficial educational tool that can 'enhance our education' and 'amplify knowledge and thought' when used properly, while acknowledging some limitations and proper usage guidelines.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I think that it’s very helpful and I use it all the time in my daily life. I love that it can give you suggestions and feedback on your writing. It can also simplify definitions so it’s easier to understand. Overall, my experience has been amazing!",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response is overwhelmingly positive about AI, specifically mentioning how it helps with understanding (simplifying definitions) and providing feedback on writing, which are learning-focused benefits. The user describes their experience as 'amazing' and notes they use it 'all the time'.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "It’s super useful",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response 'It's super useful' expresses a positive sentiment about AI, indicating the person finds AI helpful, which best aligns with the 'Positive Learning Use' category.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I think AI isn't going to replace humans, but those who know how to use AI better will replace those who don't. To me AI is almost like an advanced calculator or search engine and serves as a tool for humans to use. Compared to a lot of my peers I think I haven't been using AI enough, so hopefully I can try using it more to learn extra.",
+      "output": "```json\n{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response views AI as a beneficial tool for learning, comparing it to calculators and search engines. The person expresses a desire to use AI more to enhance their learning, indicating they see it as a positive educational resource.\"\n}\n```",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "AI can benefit a lot of people and impact how they learn and interpret things.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response expresses a positive view of AI's impact on learning, stating that it can 'benefit a lot of people' and 'impact how they learn and interpret things', which aligns with the category of positive educational applications.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I think that it is a good tool to study or review or understand concepts, but should not be doing your actual assignments for you.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response primarily emphasizes AI as a 'good tool to study or review or understand concepts', which directly aligns with the Positive Learning Use category. While it briefly mentions not using AI for completing assignments, the main sentiment is about AI's helpful role in learning.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I think that you should never use AI to just do your work for you. I use it as a starting point sometimes but I always end up writing my own thing. I know people in my history class who would just brainlessly submit stuff from AI without eve double checking it which is bad, because they always ended up doing badly since AI makes stuff up sometimes. I think its a great resource but I would never use to get a quick break or to just not do work.",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response primarily focuses on concerns about students becoming dependent on AI to do their work for them, emphasizing that AI should be used as a starting point rather than a replacement for one's own effort. The respondent criticizes classmates who 'brainlessly submit' AI-generated content without putting in their own work.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "Unfair",
+      "output": "{\n  \"category\": \"Cheating Concerns\",\n  \"reason\": \"The response 'Unfair' most likely refers to concerns about academic dishonesty or unfair advantages gained through AI use in education, which aligns with the Cheating Concerns category.\"\n}",
+      "category": "Cheating Concerns"
+    },
+    {
+      "input": "They can be very helpful sometimes. Looking for reference-material, study guides, etc. However it is very easy to use it to cheat.",
+      "output": "{\n  \"category\": \"Cheating Concerns\",\n  \"reason\": \"While the response acknowledges AI can be helpful for reference materials and studying, the primary concern expressed is about how 'very easy' it is to use AI for cheating, making this the most prominent theme.\"\n}",
+      "category": "Cheating Concerns"
+    },
+    {
+      "input": "AI use is always a spectrum. AI is definitely a tool, but when used incorrectly, it can be a hazard and/or harmful.",
+      "output": "{\n  \"category\": \"Other\",\n  \"reason\": \"The response provides a general philosophical view about AI being a tool with potential benefits and risks, but doesn't specifically mention educational use, personal experiences, or fit clearly into any of the defined categories.\"\n}",
+      "category": "Other"
+    },
+    {
+      "input": "I think it is very useful but also could be used to restrict human creativity. For example instead of brainstorming things by yourself you could just ask ChatGPT",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response expresses concern about AI restricting human creativity by making people rely on it (like ChatGPT) instead of brainstorming on their own, which aligns with worries about becoming dependent on AI.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "I think AI shouldn't be used to do thinking for you, but uses outside of that like giving you starting ideas or practice problems can be helpful.",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response expresses concern about using AI to 'do thinking for you', which indicates worry about becoming dependent on AI rather than developing one's own thinking skills, while acknowledging some beneficial uses.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "Has a lot of potential if used properly - for example using it to study or explain concepts that i don't understand",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response explicitly mentions using AI to study and explain concepts that are difficult to understand, which directly aligns with the 'Positive Learning Use' category that describes AI helping with understanding and studying.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I think that there’s a lot that can be done to improve the quality of AI responses because often they’re over complicated and don’t go to the point.",
+      "output": "{\n  \"category\": \"Negative Experiences\",\n  \"reason\": \"The response criticizes AI responses as being 'over complicated' and not getting 'to the point', indicating frustration with the quality and usefulness of AI outputs, which aligns with the 'Negative Experiences' category describing AI as confusing or unhelpful.\"\n}",
+      "category": "Negative Experiences"
+    },
+    {
+      "input": "In my experience, AI has been one of the strongest tools I’ve used to improve on skills. I pretty much only use it for breaking down math problems and helping me troubleshoot code. Although I do believe it’s easy to misuse AI, I think that the benefits strongly outweigh the negatives.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response primarily describes how AI has been a 'strong tool' that helps the person improve skills, specifically for breaking down math problems and troubleshooting code. While they acknowledge potential misuse, their overall sentiment is that AI has been beneficial for their learning.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "pretty cool and is an amazing tutor",
+      "output": "```json\n{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response describes AI as 'pretty cool' and 'an amazing tutor', clearly indicating a positive experience with AI as a learning tool.\"\n}\n```",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "Helped with my development and growth and opened doors I would not have known to exist without AI. Helped me learn beyond the limits of a traditional education",
+      "output": "```json\n{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response clearly indicates AI has enhanced the person's learning experience by helping with development, growth, and learning beyond traditional education limits.\"\n}\n```",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I don’t believe it should be used because everything you do with ai for education is something that helps with critical thinking skills, and something people should practice.",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response expresses concern that using AI for education replaces activities that develop critical thinking skills, suggesting worry about dependency on AI rather than developing important cognitive abilities.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "I think when used responsibly AI can be very helpful. Something I don’t like about AI is AI art, as it’s misleading and can take away from real artists.",
+      "output": "{\n  \"category\": \"Ethical/Privacy Concerns\",\n  \"reason\": \"The response primarily expresses concern about AI art being misleading and potentially harmful to real artists, which reflects broader ethical concerns about AI's impact on society and creative professions.\"\n}",
+      "category": "Ethical/Privacy Concerns"
+    },
+    {
+      "input": "I think that AI is really impacting the education system because even though I use it, I have realized how much work that I don’t understand since I trusted AI with assignments.",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response expresses concern about depending too much on AI for assignments, noting that this has led to a lack of understanding of the work, which aligns with worries about becoming dependent on AI.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "I think it’s fine at long as the work isnt fully plagiarized",
+      "output": "{\n  \"category\": \"Cheating Concerns\",\n  \"reason\": \"The response directly addresses academic integrity by mentioning plagiarism, suggesting the respondent is primarily concerned with where to draw the line between acceptable AI use and academic dishonesty.\"\n}",
+      "category": "Cheating Concerns"
+    },
+    {
+      "input": "It should not be allowed on the learner’s end because it is just a pattern recognition model that sometimes makes up information. It is untrustworthy and takes all of the elements of learning from a person. A person who uses ai has it think for them instead of for themselves",
+      "output": "```json\n{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response primarily expresses concern that AI takes away learning opportunities and makes people stop thinking for themselves, which aligns with worries about dependency and laziness.\"\n}\n```",
+      "category": "Overreliance"
+    },
+    {
+      "input": "can be used for finding sources or other small tasks but not actual work like essay",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response expresses concern about using AI for 'actual work like essay', suggesting worry about inappropriate dependence on AI for substantive academic tasks, while acknowledging appropriate use for smaller tasks.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "Can be used to explain concepts and help review, but shouldn’t be used to do the task for you",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response primarily emphasizes the helpful aspects of AI for explaining concepts and reviewing material, which aligns with positive educational use, while acknowledging limitations about not using it to complete assignments.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "Keep AI as a tool to use to advance the world no need to limit its use for students who could one day use to to build a company",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response views AI as a beneficial tool that can 'advance the world' and should be available to students for learning and future innovation, suggesting a positive perspective on AI's educational value.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I think its the inevitable future of education, and theres nothing you can do about it,",
+      "output": "{\n  \"category\": \"Other\",\n  \"reason\": \"The response is a general statement about AI being the future of education without expressing a specific concern, experience, or use case that fits the other categories. It's a philosophical position about AI's inevitability rather than a personal experience or specific concern.\"\n}",
+      "category": "Other"
+    },
+    {
+      "input": "It's okay when used correctly. I use it to make me study guides and practice tests a lot and I think that is an appropriate usage but I know a lot of people who use it to do all their assignments.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response primarily describes using AI for legitimate learning purposes (creating study guides and practice tests), which the person considers 'appropriate usage'. While they mention others misusing it, their own experience is focused on how AI helps their studying.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "Shouldn’t be used for schoolwork, should be used as little as possible",
+      "output": "{\n  \"category\": \"Cheating Concerns\",\n  \"reason\": \"The response expresses a negative view that AI shouldn't be used for schoolwork and should be minimized, which most closely aligns with concerns about academic integrity and potential misuse.\"\n}",
+      "category": "Cheating Concerns"
+    },
+    {
+      "input": "For me, personally, AI should be used as little as possible. Though I am a student and many of my peers misuse AI during school, I try not ti as much as possible because I know that learning excersises and grows my brain and thinking capacity. I want to be successful when I grow up so I try to authentically do my work however much I can to gain experience in different subjects and fields and actually understand concepts rather than use AI to solve problems for me. I also just learned that AI has a very large negative impact on the environment, and that the super computers used to run these codes and systems use a great amount of energy, powered by fossil fuels, so I really don't like that so many people are using AI nowadays. Yes, there are many pros that follow AI, like personalized study guides and more efficient ways of getting work done, but while in an educational environment, using AI to assist you in assignments is achieving almost the opposite of actually learning concepts needed in one's future.",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response primarily expresses concern about students becoming dependent on AI rather than developing their own thinking capacity and understanding concepts. The writer emphasizes wanting to 'authentically do my work' to gain experience and understanding instead of letting AI solve problems for them.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "destruction of enviroment isnt enough to justify convenience, concerned that it falls way too much into convenience culture",
+      "output": "```json\n{\n  \"category\": \"Ethical/Privacy Concerns\",\n  \"reason\": \"The response expresses concerns about AI's broader societal impact, specifically mentioning environmental destruction and 'convenience culture' as ethical issues, rather than focusing on academic or personal usage aspects.\"\n}\n```",
+      "category": "Ethical/Privacy Concerns"
+    },
+    {
+      "input": "I think it’s helpful for specific uses, but it’s definitely used to an extent. In the past I’ve witnessed classmates get accused of being 100% AI, and it’s not fun for anyone.",
+      "output": "{\n  \"category\": \"Policy/School Rules\",\n  \"reason\": \"The response primarily focuses on how AI use is perceived in an academic setting, specifically mentioning classmates being accused of using AI, which relates to enforcement of rules or policies around AI use in school.\"\n}",
+      "category": "Policy/School Rules"
+    },
+    {
+      "input": "AI is a really good tool to help you learn but sometimes it can give you false information - it will teach you the wrong thing. But AI tools are really helpful for studying for tests.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response primarily emphasizes AI as a 'really good tool to help you learn' and 'really helpful for studying for tests', indicating positive educational use despite acknowledging potential inaccuracies.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "Personally I don’t understand how people can trust AI to this extent. Especially because they don’t always give you the correct or accurate answer. Even when students cheat with chat gpt, they probably aren’t even getting the right answers most of the time. In general I believe it’s better to not formulate a reliance on AI, because you’ll just want to use it more and more overtime, loosing your own creative thinking. Lastly, AI is also bad for the environment.",
+      "output": "{\n  \"category\": \"Trust Issues\",\n  \"reason\": \"The response primarily expresses skepticism about trusting AI, specifically mentioning that AI doesn't always give correct or accurate answers. While it briefly mentions cheating and overreliance, the dominant theme is about not trusting AI's reliability.\"\n}",
+      "category": "Trust Issues"
+    },
+    {
+      "input": "I think AI is very fascinating and useful to many people for different reasons.",
+      "output": "{\n  \"category\": \"Other\",\n  \"reason\": \"The response is a general statement about AI being fascinating and useful, but doesn't specifically mention educational use, learning experiences, concerns, or any other category-specific content. It's too general to fit into the more specific categories.\"\n}",
+      "category": "Other"
+    },
+    {
+      "input": "I think that although it is a resource, it is too available and can be used harmfully very commonly.",
+      "output": "{\n  \"category\": \"Cheating Concerns\",\n  \"reason\": \"The response emphasizes that AI can be 'used harmfully very commonly', which aligns with concerns about academic dishonesty or misuse. While the person acknowledges AI as a resource, their primary concern is about its potential for harmful use, which most closely matches the cheating concerns category.\"\n}",
+      "category": "Cheating Concerns"
+    },
+    {
+      "input": "It isn’t very reliable and sometimes bad. For example, some people write like AI and may get accused when it isn’t used. It also makes it hard for people who don’t use it. My teacher have to implement special rules and make it harder to do stuff.",
+      "output": "```json\n{\n  \"category\": \"Policy/School Rules\",\n  \"reason\": \"The response primarily focuses on how teachers have had to implement special rules due to AI, making it harder to complete assignments. While it mentions reliability issues, the emphasis is on the policy changes in the classroom.\"\n}\n```",
+      "category": "Policy/School Rules"
+    },
+    {
+      "input": "Imo I think ai kinda set the standard of creativity for ppl that heavily uses ai chatbots. And ppl this generation are def losing their ability to create original work due to the heavy reliance on ai.",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response expresses concern about people becoming too dependent on AI, specifically mentioning 'heavy reliance' and people 'losing their ability to create original work' due to AI usage.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "Teachers and schools limit AI to an unfair degree, and instead of trying to understand how best to use it, they completely disallow it. This puts students at a disadvantage since AI will only continue to grow and if students are not taught to use it properly, they will be behind once they enter the real world.",
+      "output": "{\n  \"category\": \"Policy/School Rules\",\n  \"reason\": \"The response primarily focuses on how teachers and schools restrict AI usage through policies that 'completely disallow it', arguing these restrictions are unfair and put students at a disadvantage.\"\n}",
+      "category": "Policy/School Rules"
+    },
+    {
+      "input": "I believe that AI is beneficial in the way that it allows students to cut down on “busy work” given to them, while also allowing them to get synopses of the information that they can read whilst inputting it in their assignments. I think that it’s also very helpful for checking for simple errors (i.e., grammatical, spelling, sentence/paragraph flow). Especially with those who have extracurriculars like sports, it is important to spend your time efficiently while also making sure you’re learning something. So while I think AI is very helpful and important, I think in a lot of cases it is abused and prevents students from learning the material they need to perform well on exams and real life applications of knowledge.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response primarily focuses on the beneficial aspects of AI in education, such as helping students reduce busy work, providing synopses of information, checking for errors, and enabling efficient time management. While it acknowledges potential misuse, the overall sentiment emphasizes how AI helps with learning and academic tasks.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "Should be used as a tool for learning, not a replacement for homework and assignments.",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response expresses concern about AI being used as a replacement for doing homework and assignments, which indicates worry about students becoming dependent on AI rather than developing their own skills.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "It helps me when I’m stuck and is a very useful tool for school",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response directly states that AI is 'a very useful tool for school' and 'helps me when I'm stuck', indicating a positive experience using AI as a learning aid.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I believe it takes away from students ability to think for themselves which will eventually backfire on humanity as we will soon rely on AI so much that we are not able to create new solutions to our problems on our own. I know that AI becoming a major part of life today is inevitable but I hope there are sensible people who will use it wisely and in measure. \n\nI wish AI was never invented.",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response primarily expresses concern about students becoming dependent on AI and losing the ability to think independently, which is the core of the 'Overreliance' category. The respondent worries about people relying on AI 'so much that we are not able to create new solutions to our problems on our own.'\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "Lowk ass. Working on a solution rn tho.",
+      "output": "{\n  \"category\": \"Other\",\n  \"reason\": \"The response is very brief and unclear, using slang that doesn't clearly indicate any specific attitude toward AI in education. It doesn't fit into any of the defined categories as it doesn't express a coherent opinion about AI use.\"\n}",
+      "category": "Other"
+    },
+    {
+      "input": "AI in education has the potential to limit students' ability of thinking on their own. AI should not completely replace human-written works. It is important to emphasize a balance between AI and human ideas if AI is being utilized, so that students do not build reliance on AI.",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response focuses on concerns about students becoming dependent on AI and losing their ability to think independently, emphasizing the need for balance to prevent reliance on AI.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "it’s helpful but as a guide not a tool",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response indicates the student views AI as 'helpful' but with a nuanced perspective that it should be used as a guide rather than relied upon completely. This suggests a positive learning use with appropriate boundaries.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "It can be helpful but it’s also deadly",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response suggests a duality where AI can be helpful but also 'deadly', which most closely aligns with concerns about overreliance or dependency. The term 'deadly' implies serious negative consequences from using AI, suggesting worry about becoming too dependent on it.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "AI in education has a lot of potential to make learning more personal and accessible. It’s great that students can get help anytime, and teachers can save time on routine tasks. If we use it wisely, AI can be a great tool to support both students and teachers.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response is entirely positive about AI in education, highlighting its potential to personalize learning, make education more accessible, provide help to students, and save teachers time on routine tasks. It frames AI as a beneficial tool when used appropriately.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I am concerned about the potential negative affect of AI chatbots/LLMs on independent thinking. For example, I’ve heard people say that after using (for ex) ChatGPT, they can’t do the same work without it and become reliant on it. This could mean that if somebody used AI to help them read and understand an article they are setting back their reading comprehension by not putting in the work themselves. Also, despite having significantly developed in the past years and having a rapid rate of improvement, AI still hallucinates frequently. I think this is something many students may not know, and so they trust the bot blindly. This concerns me, especially if they are learning about political views or history, because they are getting a potentially biased and inaccurate world view.",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response primarily expresses concern about students becoming dependent on AI tools, specifically mentioning how people 'can't do the same work without it and become reliant on it' and how this dependency might hinder development of skills like reading comprehension.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "It can be useful if used primarily to teach the students rather than giving the answer straight to the students.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response indicates AI can be beneficial in education when used to teach students rather than just providing answers, suggesting a positive view of AI as a learning tool.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I think AI is really useful and can be used in good ways for education.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response directly expresses a positive view of AI in education, stating it is 'really useful' and 'can be used in good ways for education', which aligns with the 'Positive Learning Use' category.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "Love it",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response 'Love it' indicates a positive sentiment toward AI in education without specific details. Since it expresses clear approval without mentioning specific concerns or uses, it best fits under the general positive category.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "it can be a good thing especially for studying  and breaking down concepts",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response directly states that AI can be beneficial for studying and breaking down concepts, which clearly indicates a positive perception of AI as a learning tool.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "Ai is so dumb, but it helps me get ideas (I’m like the most uncreative person I know so I really need it)",
+      "output": "```json\n{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response indicates that despite finding AI 'dumb', the person uses it to generate ideas, which helps overcome their self-described lack of creativity. This represents a positive learning use case where AI serves as a tool for ideation and creative support.\"\n}\n```",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I think AI is definitely good for helping with understanding subjects in school but shouldnt be used to do your work for you. We can't keep relying on AI for everything, because we humans are the ones that organize the world... erm idk what im saying but u totes get the point 🤪",
+      "output": "{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response primarily expresses concern about becoming too dependent on AI, stating 'We can't keep relying on AI for everything' and suggesting AI should help with understanding but not be used to complete work for students.\"\n}",
+      "category": "Overreliance"
+    },
+    {
+      "input": "I like it for proofreading and that’s pretty much it.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response indicates the student uses AI for proofreading, which is a constructive academic use that helps with their learning process.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "I think it does allow for cheating in school in environments ☹️😔 but I can see it being useful for students with disabilities if utilized correctly.",
+      "output": "{\n  \"category\": \"Cheating Concerns\",\n  \"reason\": \"The response primarily focuses on AI enabling academic cheating, mentioning this concern first with sad emojis. While it acknowledges potential benefits for students with disabilities, the cheating concern appears to be the dominant sentiment.\"\n}",
+      "category": "Cheating Concerns"
+    },
+    {
+      "input": "AI is an extremely powerful tool that should be leveraged in order to enhance a student's learning experience rather than nullify it. While the accuracy of their answers can be less than stellar at times, performance will improve as the technology evolves.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response views AI as a 'powerful tool' that should be used to 'enhance a student's learning experience', indicating a positive perspective on AI as a learning aid despite acknowledging some current limitations in accuracy.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "It good it’s my therapist!",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response indicates a positive experience with AI, describing it as 'good' and as a 'therapist', suggesting the AI is helpful to them in a supportive capacity. While unconventional, this falls best under positive learning use as the student finds value in the AI's assistance.\"\n}",
+      "category": "Positive Learning Use"
+    },
+    {
+      "input": "ai can and will be helpful to people that know how to use it to improve themselves and not rely on it, however those that solely rely on ai and dont care about self improvement will only reach the max potential of the ai, not themselves, thus making things harder",
+      "output": "```json\n{\n  \"category\": \"Overreliance\",\n  \"reason\": \"The response primarily focuses on concerns about people becoming too dependent on AI rather than developing their own abilities, explicitly stating that relying solely on AI limits personal growth and potential.\"\n}\n```",
+      "category": "Overreliance"
+    },
+    {
+      "input": "I am against it.",
+      "output": "{\n  \"category\": \"Other\",\n  \"reason\": \"The response is a brief statement of opposition to AI in education without specific details that would fit into the other categories. It doesn't elaborate on reasons like cheating, negative experiences, or ethical concerns, making 'Other' the most appropriate classification.\"\n}",
+      "category": "Other"
+    },
+    {
+      "input": "I think it’s good and helpful for students, but overused.",
+      "output": "{\n  \"category\": \"Positive Learning Use\",\n  \"reason\": \"The response primarily expresses a positive view of AI as 'good and helpful for students', though it acknowledges potential overuse. The main sentiment is positive toward AI's educational benefits.\"\n}",
+      "category": "Positive Learning Use"
+    }
+  ]
+}
